@@ -2,3 +2,5 @@
 # frozen_string_literal: true
 
 require "markdown/jotter"
+
+puts Markdown::Jotter::VERSION
