@@ -3,4 +3,5 @@
 
 require "markdown/jotter"
 
-puts Markdown::Jotter::VERSION
+# boot note jotter
+Markdown::Jotter::CLI.start

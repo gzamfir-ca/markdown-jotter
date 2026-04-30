@@ -1,6 +1,45 @@
 module Markdown
   module Jotter
+    BASE_COLOR: String
+    PASS_COLOR: String
     VERSION: String
-    # See the writing guide of rbs: https://github.com/ruby/rbs#guides
+
+    class CLI
+      def self.exit_on_failure?: -> bool
+
+      def self.start: -> untyped
+
+      def compose: (String note) -> untyped
+
+      def help: -> untyped
+
+      def tree: -> untyped
+
+      def version: -> untyped
+    end
+
+    self.@root: untyped
+
+    def self.compose: (String note, String root) -> int
+
+    def self.setup: -> untyped
+
+    def self.version: -> untyped
+
+    private
+
+    def self.entry_text: -> String
+
+    def self.log_exception: (Symbol | nil method_name, String message, StandardError exp) -> untyped
+
+    def self.log_message: (Symbol | nil method_name, String message) -> untyped
+
+    def self.note_name: (String note) -> String
+
+    def self.path_name: (String name) -> untyped
+
+    def self.title_text: (String name) -> String
+
+    def self.update_file?: (untyped file, String mode, String data) -> bool
   end
 end
