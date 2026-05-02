@@ -95,7 +95,7 @@ PLATFORMS
   arm64-darwin
 
 DEPENDENCIES
-  bundler (>= 4.0.10)
+  bundler (>= 4.0.11)
   irb (>= 1.18.0)
   markdown-jotter!
   rake (>= 13.4.2)
@@ -149,4 +149,4 @@ CHECKSUMS
   unicode-emoji (4.2.0) sha256=519e69150f75652e40bf736106cfbc8f0f73aa3fb6a65afe62fefa7f80b0f80f
 
 BUNDLED WITH
-  4.0.10
+  4.0.11
