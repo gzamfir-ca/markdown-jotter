@@ -80,7 +80,7 @@ module Markdown
     end
 
     def self.note_name(note)
-      File.basename(note, ".*").sub(/^\d{8}_/, "").gsub(/[^0-9A-Za-z.-]/, "-")
+      File.basename(note, ".*").sub(/^\d{8}_/, "").gsub(/[^0-9A-Za-z._]/, "_")
     end
 
     def self.path_name(mark)
@@ -93,8 +93,8 @@ module Markdown
     end
 
     def self.title_text(mark)
-      formatted_mark = mark.split("-").map(&:capitalize).join(" ")
-      "# #{Time.now.strftime("%Y%m%d")} #{formatted_mark}\n\n #inbox\n"
+      formatted_mark = mark.split("_").map(&:capitalize).join(" ")
+      "# #{Time.now.strftime("%Y%m%d")} #{formatted_mark}\n"
     end
 
     def self.update_file?(file, mode, data)
